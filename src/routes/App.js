@@ -1,19 +1,21 @@
 import './App.css';
-import {Header} from '../../src/components/organisms/Header/Header';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import {Home} from '../pages/Home/Home'
-
+import {Pokedex} from '../../src/pages/Pokedex/Pokedex';
 function App() {
+
+  const router = createBrowserRouter(createRoutesFromElements(
+    <>
+    <Route path='/' element={<Home/>}/>
+    <Route path='/Pokedex' element={<Pokedex/>}/>
+    </>
+  ))
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header/>
-      </header>
-      <main className='App-main'>
-        <Home/>
-      </main>
-      <footer className='App-footer'>
-nnnn
-      </footer>
+    <div> 
+      
+      <RouterProvider router={router}/>
+        
     </div>
   );
 }
