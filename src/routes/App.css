@@ -30,7 +30,7 @@
 .Main-left {
   width: 45%;
   height: 100%;
-  background-image: url('../public/images/pok1.jpg');
+  background-image: url('../../public/images/pok1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -41,7 +41,7 @@
 .Main-right {
   width: 45%;
   height: 100%;
-  background-image: url('../public/images/pok3.jpg');
+  background-image: url('../../public/images/pok3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
